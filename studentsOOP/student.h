@@ -11,18 +11,18 @@ public:
 	void setLastName(string lastName);
 	void setYearOfBirth(int yearOfBirth);
 	void setYearOfAdmission(int YearOfAdmission);
-	void setPhysMarks(int* physMarks);
+	void setPhysMarks(int m1, int m2, int m3);
 
 	string getFirstName();
 	string getLastName();
 	int getYearOfBirth();
 	int getYearOfAdmission();
-	int* getPhysMarks();
+	int getPhysMarks(int index);
 
 private:
 	string firstName;
 	string lastName;
 	int yearOfBirth;
 	int yearOfAdmission;
-	int* physMarks;
+	int physMarks[3];
 };

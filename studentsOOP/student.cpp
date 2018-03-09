@@ -9,26 +9,36 @@ Student::~Student(){};
 
 
 
-void Student::setFirstName(string firstName) {
-	firstName = firstName;
+void Student::setFirstName(string fName) {
+	firstName = fName;
+};
+void Student::setLastName(string lName) {
+	lastName = lName;
+};
+void Student::setYearOfBirth(int yearBirth) {
+	yearOfBirth = yearBirth;
+};
+void Student::setYearOfAdmission(int YearAdmission) {
+	yearOfAdmission = YearAdmission;
+};
+void Student::setPhysMarks(int m1, int m2, int m3) {
+	physMarks[0] = m1;
+	physMarks[1] = m2;
+	physMarks[2] = m3;
 };
 
-void Student::setLastName(string lastName) {
-	lastName = lastName
+string Student::getFirstName() {
+	return firstName;
 };
-void Student::setYearOfBirth(int yearOfBirth) {
-	yearOfBirth = yearOfBirth
+string Student::getLastName() {
+	return lastName;
 };
-void Student : setYearOfAdmission(int YearOfAdmission) {
-	YearOfAdmission
+int Student::getYearOfBirth() {
+	return yearOfBirth;
 };
-	void Student::setPhysMarks(int* physMarks) {
-	
-	};
-
-	string getFirstName();
-	string getLastName();
-	int getYearOfBirth();
-	int getYearOfAdmission();
-	int* getPhysMarks();
-}
+int Student::getYearOfAdmission() {
+	return yearOfAdmission;
+};
+int Student::getPhysMarks(int index) {
+	return physMarks[index];
+};
