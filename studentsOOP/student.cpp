@@ -19,8 +19,12 @@ void Student::setLastName(string lastName) {
 void Student::setYearOfBirth(int yearOfBirth) {
 	yearOfBirth = yearOfBirth
 };
-	void setYearOfAdmission(int YearOfAdmission);
-	void setPhysMarks(int* physMarks);
+void Student : setYearOfAdmission(int YearOfAdmission) {
+	YearOfAdmission
+};
+	void Student::setPhysMarks(int* physMarks) {
+	
+	};
 
 	string getFirstName();
 	string getLastName();
