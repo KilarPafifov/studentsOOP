@@ -14,17 +14,22 @@ id = ID;
 }
 
 void Group::addStudent(Student student) {
+	Student* studentsCopy;
 	sizeOfGroup++;
-	for (int i = 0; i < sizeOfGroup; i++) {
-		students = new Student[sizeOfGroup];
+	studentsCopy = new Student[sizeOfGroup];
+	for (int i = 0; i < sizeOfGroup-1; i++) {
+		studentsCopy[i] = students[i];
 	}
-		students[sizeOfGroup] = student;
-	for(int i = 0; i < sizeOfGroup; i++){
-	stud[i] = students[i];
-	}
-	for (int i = 0; i < sizeOfGroup; i++) {
-		students[i] = stud[i];
-	}
-	for (int i = 0; i < 10; i++) {
-		 stud[i] = 0;
-	}
+	studentsCopy[sizeOfGroup-1] = student;
+	delete[] students;
+	students = studentsCopy;
+}
+
+
+
+	/*
+	1-объявить временный контейнер для хранения объектов класса "Student" больше на 1 чем текущий
+	2-занести во временный контейнер объектов хранимого класса из старого
+	3-нового студента добавить в новый массив
+	4-очистить память занимаемую старым массивом
+	5- старому массиву присвоить значение нового*/

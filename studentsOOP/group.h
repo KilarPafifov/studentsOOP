@@ -14,7 +14,6 @@ public:
 private:
 	int sizeOfGroup;
 	Student* students;
-	Student stud[10];
 	int id;
 
 };
