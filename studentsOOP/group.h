@@ -7,10 +7,14 @@ public:
 	int getID();
 	Student getStudent(int index);
 
-	int setID(int id);
-	Student setStudent(Student student);
+	void setID(int ID);
+
+
+	void addStudent(Student student);
 private:
-	Student students[COUNT_STUDENTS];
+	int sizeOfGroup;
+	Student* students;
+	Student stud[10];
 	int id;
 
 };
