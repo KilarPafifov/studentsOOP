@@ -18,8 +18,10 @@ public:
 	int getYearOfBirth();
 	int getYearOfAdmission();
 	int getPhysMarks(int index);
+	void printStudent();
 
 private:
+
 	string firstName;
 	string lastName;
 	int yearOfBirth;

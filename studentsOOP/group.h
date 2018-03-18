@@ -1,6 +1,5 @@
 #pragma once
 #include "student.h"
-#define COUNT_STUDENTS 3
 class Group
 {
 public:
@@ -11,8 +10,10 @@ public:
 
 
 	void addStudent(Student student);
+	void deleteStudent(int index);
+	
 private:
-	int sizeOfGroup;
+	int sizeOfGroup = 0;
 	Student* students;
 	int id;
 

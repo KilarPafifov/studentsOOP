@@ -24,7 +24,20 @@ void Group::addStudent(Student student) {
 	delete[] students;
 	students = studentsCopy;
 }
+void Group::deleteStudent(int index) {
+	Student* studentCopy;
+	sizeOfGroup--;
+	studentCopy = new Student[sizeOfGroup];
+	for (int i = 0; i < index; i++) {
+		studentCopy[i] = students[i];
+	}
+	for (int i = index ; i < sizeOfGroup; i++) {
+		studentCopy[i] = students[i + 1];
+	}
+	delete[] students;
+	students = studentCopy;
 
+};
 
 
 	/*

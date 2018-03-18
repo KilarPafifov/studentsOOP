@@ -1,5 +1,6 @@
 #include"stdafx.h"
 #include "student.h"
+#include<iostream>
 #include<string>
 using namespace std;
 
@@ -42,3 +43,12 @@ int Student::getYearOfAdmission() {
 int Student::getPhysMarks(int index) {
 	return physMarks[index];
 };
+void Student::printStudent() {
+	cout << firstName << endl;
+	cout << lastName << endl;
+	cout << yearOfBirth << endl;
+	cout << yearOfAdmission << endl;
+	for (int i = 0; i < 3; i++) {
+		cout << physMarks[i] << endl;
+	}
+}
