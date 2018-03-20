@@ -36,6 +36,8 @@ int main()
 		cout << g1.getStudent(1).getPhysMarks(i) << " , ";
 	}
 	s1.printStudent();
+	cout << endl;
+	g1.printGroup();
 	system ("pause");
     return 0;
 }

@@ -11,6 +11,7 @@ public:
 
 	void addStudent(Student student);
 	void deleteStudent(int index);
+	void printGroup();
 	
 private:
 	int sizeOfGroup = 0;

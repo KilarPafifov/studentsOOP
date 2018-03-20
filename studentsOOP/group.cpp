@@ -38,7 +38,11 @@ void Group::deleteStudent(int index) {
 	students = studentCopy;
 
 };
-
+void Group::printGroup() {
+	for (int i = 0; i < sizeOfGroup; i++) {
+		students[i].printStudent();
+	}
+};
 
 	/*
 	1-объ€вить временный контейнер дл€ хранени€ объектов класса "Student" больше на 1 чем текущий
